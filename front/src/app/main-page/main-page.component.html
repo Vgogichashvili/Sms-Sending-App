@@ -1,0 +1,45 @@
+<form (ngSubmit)="onFormSubmit(form)" name="loginForm" #form="ngForm">
+  <div class="col-md-12">
+    <h1><span class="number"></span>Sending messages</h1>
+
+    <label>Phone</label>
+    <textarea
+      type="phone"
+      id="name"
+      [(ngModel)]="finalStr"
+      (keyup)="keyFunc($event)"
+      name="phone"
+      required="required"
+    ></textarea>
+
+    <label>Text</label>
+    <textarea
+      id="text"
+      ngModel
+      [(ngModel)]="finalStrText"
+      name="text"
+      required="required"
+    ></textarea>
+
+    <button id="excel" type="button" (click)="onExcelBtnClick(excelInp)">
+      Excel 
+    </button>
+    <input
+      #excelInp
+      type="file"
+      ngModel
+      (change)="readExcel($event)"
+      name="excel"
+      [ngStyle]="{
+        display: 'none'
+      }"
+    />
+
+    <button type="submit" class="btn-hover send-btn">Send</button>
+  </div>
+  <div>
+    <button class="status-btn" type="button" routerLink="sms-status">
+      Sms Status
+    </button>
+  </div>
+</form>

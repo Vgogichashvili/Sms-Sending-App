@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200&family=Montserrat:wght@300;500&family=Roboto+Condensed:ital@1&display=swap");
+
+* {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-size: medium;
+}
+
+a {
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none;
+  border-radius: 6px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right,
+    #0ba360,
+    #3cba92,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-image: linear-gradient(to right, #30dd8a, #2ecf81);
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}

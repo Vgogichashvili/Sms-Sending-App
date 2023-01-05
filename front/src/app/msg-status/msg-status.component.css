@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css");
+
+section {
+  width: 50%;
+  margin: 2% auto;
+}
+
+table {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+td,
+th {
+  text-align: center !important;
+  vertical-align: middle !important;
+  font-family: "Montserrat", sans-serif;
+  font-family: "BPG Arial Caps", sans-serif;
+}
+mat-label {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: rgb(17, 17, 17);
+}
+
+.search-bar input {
+  font-family: "BPG Arial Caps", sans-serif;
+  color: rgb(179, 147, 147);
+}
+
+th {
+  font-size: medium;
+}
+
+.search-bar {
+  height: 65px !important;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
